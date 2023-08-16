@@ -1,0 +1,56 @@
+﻿<Window x:Class="budgetPlannerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:budgetPlannerWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-16" RenderTransformOrigin="0.499,0.499" >
+
+        <Grid x:Name="BG" RenderTransformOrigin="0.497,0.662">
+
+            <Grid.Background>
+
+                <ImageBrush x:Name="_img_bg"
+                            ImageSource="backgrounds/background.jpg" 
+                            Stretch="Fill"/>
+
+
+
+
+            </Grid.Background>
+            <Label Content="BUDGET PLANNER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="342" Foreground="Gold" FontSize="25" Height="44" Margin="199,107,0,0" FontFamily="Arial Black"/>
+            <Label Content="' FINANCIAL BUDGETING MADE EASY '" HorizontalAlignment="Center" VerticalAlignment="Top" Width="556" Foreground="Gold" FontSize="25" Height="46" Margin="0,275,0,0" FontFamily="Arial Black"/>
+
+            <!--<ListView x:Name="LV"
+                          Background="Transparent"
+                          BorderBrush="Transparent"
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="0,-10,0,10">
+
+                -->
+            <!--Home Icon-->
+            <!--
+                <ListViewItem x:Name="ListViewItem1" Selected="ListViewItem1_Selected">
+                    <StackPanel Orientation="Horizontal"
+                                    Width="106" Height="66">
+                        <Image Source="backgrounds/start.ico"
+                                   Stretch="Fill" Height="34" Width="39"/>
+                        <TextBlock Text="EXIT"
+                                       TextAlignment="Center"
+                                       Height="20" Width="57"/>
+                    </StackPanel>
+                </ListViewItem>
+
+
+            </ListView>-->
+
+        </Grid>
+
+
+
+        <Button Content="START" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Height="53" Margin="286,172,0,0" Background="Gold" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>

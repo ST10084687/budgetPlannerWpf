@@ -1,0 +1,71 @@
+﻿<Window x:Class="budgetPlannerWPF.CarPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:budgetPlannerWPF"
+        mc:Ignorable="d"
+        Title="CarPage" Height="450" Width="800">
+    <Grid Margin="0,0,0,-16">
+
+
+
+        <Grid x:Name="BG" RenderTransformOrigin="0.497,0.662">
+
+            <Grid.Background>
+
+                <ImageBrush x:Name="_img_bg"
+                            ImageSource="backgrounds/background.jpg" 
+                            Stretch="Fill"/>
+
+            </Grid.Background>
+        </Grid>
+
+
+
+
+        <Label Content="Please enter the following values :" FontSize="18" HorizontalAlignment="Left" Margin="207,75,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.019,-0.309" Foreground="Gold" Height="40" FontFamily="Arial Black"/>
+
+        <Grid HorizontalAlignment="Center" Height="268" Margin="0,75,0,0" VerticalAlignment="Top" Width="632">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Make and Model :" FontSize="15" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="56,42,0,0"/>
+
+            <Label Content="Purchase Price :" FontSize="15" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="56,89,0,0"/>
+
+            <Label Content="Initial Deposit :" Foreground="Blue" FontSize="15" VerticalAlignment="Top" Margin="56,137,0,0" HorizontalAlignment="Left"/>
+
+            <Label Content="Interest Rate :" Foreground="Blue" FontSize="15" VerticalAlignment="Top" Margin="54,183,0,0" HorizontalAlignment="Left" RenderTransformOrigin="0.465,-0.8"/>
+
+            <Label Content="Estimated Monthly Premium :" Foreground="Blue" FontSize="15" VerticalAlignment="Top" Margin="56,233,0,0" HorizontalAlignment="Left" Width="306"/>
+
+
+            <TextBox x:Name="makeTb" HorizontalAlignment="Left" TextWrapping="Wrap" Width="252" Height="30" Margin="324,42,0,0" VerticalAlignment="Top"/>
+
+            <TextBox x:Name="purchaseTB" HorizontalAlignment="Left" TextWrapping="Wrap" Width="252" Height="30" Margin="324,89,0,0" VerticalAlignment="Top" />
+
+            <TextBox x:Name="depositTB" HorizontalAlignment="Left" Margin="324,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Height="30" RenderTransformOrigin="0.522,-3.382"/>
+
+            <TextBox x:Name="interestTB" HorizontalAlignment="Left" Margin="324,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Height="30"/>
+
+            <TextBox x:Name="insuranceTB" HorizontalAlignment="Left" Margin="324,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Height="27"/>
+
+        </Grid>
+
+        <Grid HorizontalAlignment="Center" Height="99" Margin="0,305,0,0" VerticalAlignment="Top" Width="698">
+
+
+
+            <Button Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Height="36" Margin="257,53,0,0" Background="Gold" Click="Button_Click"/>
+
+
+
+
+        </Grid>
+
+    </Grid>
+</Window>
+
+
